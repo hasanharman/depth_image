@@ -33,7 +33,8 @@ Install depth estimation project with pip
 To deploy this project run
 
 ```bash
-  npm run deploy
+  docker build -t depth_estimation
+  docker run -d -p 8041:8041 depth_estimation
 ```
 
 
