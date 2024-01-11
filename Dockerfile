@@ -1,10 +1,10 @@
-FROM python:3.10 
+FROM python:3.10
 
 WORKDIR /app
 
 RUN apt-get update && \
     apt-get install -y libjpeg-dev && \
-    apt-get
+    apt-get clean
 
 COPY requirements.txt /app/
 
